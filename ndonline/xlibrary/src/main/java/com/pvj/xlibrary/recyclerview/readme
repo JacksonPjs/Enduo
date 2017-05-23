@@ -1,0 +1,18 @@
+LoadingMoreFooter 类 负责底部样式
+
+ 一：ProgressBar pb = new ProgressBar(getContext());
+        //android:indeterminateDrawable
+        pb.setLayoutParams(new LayoutParams(dip2px(getContext(),20),dip2px(getContext(),20)));
+        Drawable d = this.getResources().getDrawable(R.drawable.loading_animation);
+     ******    //  可以改变  R.drawable.loading_animation 改变样式
+
+
+        pb.setIndeterminateDrawable(d);
+
+
+ 二：initView() 完全改变 里面的逻辑  或者  更可以 重写自己写个类
+
+
+
+ LoadMoreRecycleView 类 提供 上拉加载的类   有潜在的bug 网上的 都差不多  使用的时候 适当的注意
+                     功能不是很全  没有去开发万能类  越万年bug越多。 个人认为 类专用 比较好。

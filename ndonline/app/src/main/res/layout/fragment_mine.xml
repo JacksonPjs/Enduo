@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_huise"
+    android:scrollbars="none"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                android:textColor="#fff"
+                android:textSize="@dimen/title_size" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/name"
+                android:src="@mipmap/app_log" />
+
+            <ImageView
+                android:id="@+id/set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:src="@mipmap/icon_set" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textview_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_title"
+            android:layout_centerHorizontal="true"
+            android:text="总资产（元）"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_samll_size"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textview_money"
+            android:id="@+id/eye_set"
+            android:layout_alignTop="@+id/textview_money"
+            android:src="@mipmap/icon_eye"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/toatal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_money"
+            android:layout_centerHorizontal="true"
+            android:text="500000000.00"
+            android:textColor="@color/ll_nor"
+            android:textSize="24sp"
+
+            />
+
+        <LinearLayout
+            android:layout_below="@+id/toatal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用资金（元）"
+                    android:textSize="14sp"
+                    android:textColor="@color/ll_nor"
+                    />
+
+                <TextView
+                    android:id="@+id/eableuse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2222222.00"
+                    android:textSize="16sp"
+                    android:textColor="@color/ll_nor"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计收益（元）"
+                    android:textSize="14sp"
+                    android:textColor="@color/ll_nor"
+                    />
+
+                <TextView
+                    android:id="@+id/toatal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2222222.00"
+                    android:textSize="16sp"
+                    android:textColor="@color/ll_nor"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/ll_nor"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_white_org"
+            android:text="充值"
+            android:textSize="@dimen/text_18_size"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/chager"
+            android:layout_weight="1"
+
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="@color/xixian"
+
+            ></View>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_white_org"
+            android:text="提现"
+            android:textSize="@dimen/text_18_size"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/withdraw"
+            android:layout_weight="1"
+
+            />
+
+
+    </LinearLayout>
+
+    <include
+
+        layout="@layout/include_mine_item" />
+
+</LinearLayout>
+</ScrollView>

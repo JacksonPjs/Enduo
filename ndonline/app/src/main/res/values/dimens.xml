@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="title_hight">50dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+
+
+    <!--我的 text 的高度 -->
+    <dimen name="text_hight2">50dp</dimen>
+    <dimen name="text_hight">40dp</dimen>
+    <dimen name="bar_size">12sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="text_lager_size">20sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_18_size">18sp</dimen>
+    <dimen name="text_15_size">15sp</dimen>
+    <dimen name="text_midle_size">14sp</dimen>
+    <dimen name="text_samll_size">12sp</dimen>
+    <dimen name="text_high_size">13sp</dimen>
+
+
+
+</resources>

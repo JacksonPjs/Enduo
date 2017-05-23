@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dsadas"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginLeft="15dp"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/text_font"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="平台公告"
+            android:background="@drawable/ann_border_nor"
+            android:textSize="@dimen/text_samll_size"
+            android:textColor="@color/text_hint"
+            />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="2016"
+            android:gravity="right"
+            android:textSize="@dimen/text_samll_size"
+            android:textColor="@color/text_hint"
+            />
+    </LinearLayout>
+</LinearLayout>

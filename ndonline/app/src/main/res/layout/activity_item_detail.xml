@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/lb"
+        layout="@layout/layout_back" />
+
+    <com.pvj.xlibrary.loadinglayout.LoadingLayout
+        android:id="@+id/layout_contiant"
+        android:layout_below="@id/lb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_huise"
+                android:orientation="vertical" >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                <include
+                    layout="@layout/item_biao_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#fff"
+                    android:divider="@drawable/divider"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="竞标开始时间"
+                            android:textColor="@color/text_hint"
+                            android:textSize="@dimen/text_midle_size"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="2016-01-01 02:01:02"
+                            android:textColor="@color/text_font"
+                            android:textSize="@dimen/text_midle_size"
+
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="剩余竞标时间"
+                            android:textColor="@color/text_hint"
+                            android:textSize="@dimen/text_midle_size"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="6天 17时 23分  13秒"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_midle_size"
+
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="担保公司"
+                            android:textColor="@color/text_hint"
+                            android:textSize="@dimen/text_midle_size"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="深圳"
+                            android:textColor="@color/text_font"
+                            android:textSize="@dimen/text_midle_size"
+
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="还款方式"
+                            android:textColor="@color/text_hint"
+                            android:textSize="@dimen/text_midle_size"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="一次性还款"
+                            android:textColor="@color/text_font"
+                            android:textSize="@dimen/text_midle_size"
+
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="剩余可投金额"
+                            android:textColor="@color/text_hint"
+                            android:textSize="@dimen/text_midle_size"
+
+                            />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="1999,222,120.00"
+                            android:textColor="@color/text_font"
+                            android:textSize="@dimen/text_midle_size"
+
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:divider="@drawable/divider"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ll_selector"
+                        android:drawableLeft="@mipmap/go"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@mipmap/go"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="项目资料"
+                        android:textColor="@color/text_font"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ll_selector"
+                        android:drawableLeft="@mipmap/go"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@mipmap/go"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="项目介绍"
+                        android:textColor="@color/text_font"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ll_selector"
+                        android:drawableLeft="@mipmap/go"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@mipmap/go"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="风控师意见"
+                        android:textColor="@color/text_font"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ll_selector"
+                        android:drawableLeft="@mipmap/go"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@mipmap/go"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="投标记录"
+                        android:textColor="@color/text_font"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+        </ScrollView>
+                <TextView
+                    android:id="@+id/btn_toubiao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="立即投标"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+    </com.pvj.xlibrary.loadinglayout.LoadingLayout>
+
+
+</RelativeLayout>

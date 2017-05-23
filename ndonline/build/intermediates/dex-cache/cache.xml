@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_4a7e94884b26fe82b0367293875e766e1fe1268c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_aab097351e9b54972f9f53644167e8e08af270f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_12baad676a2127ebd932f76db35350936bd8b37e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\logging-interceptor\3.2.0\a56f28d5b7fab623c6c1d2afa08dd496d873ac21\logging-interceptor-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a56f28d5b7fab623c6c1d2afa08dd496d873ac21">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\logging-interceptor-3.2.0_8c091b18cda26f82f174b3fa9c0f816fb931a653.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_145f3ac750965d44f32f71ed314f95cb96902dea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1_fc861cbde294a7e4a9efd57936d766cb077b60e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.zhy\okhttputils\2.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fdb2999a05364a8f66f4985624e18e949427d4ee">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.zhy-okhttputils-2.0.0_81f79f45ca6c8befb9d393ef69a37e32ba9cb89c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\okhttp-2.5.0_c5a573687790528960a2cdb5042d396490d51899.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_70573a545e4db3088404a2e5d880c7085e9ba913.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_90cae6a28a7f97f87f4bd2010f20c6060bcc2063.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_d40310d2243a90acf583eccb6b66c449c98845ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="54addd393799c2474395a099264b8b334b3a08b1">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\instant-run_2628ce992e21f1b201b2b859296185975b901925.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-scalars\2.1.0\7c0d7c8f6e52115bb82fa018d81a8d0cae35dde5\converter-scalars-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7c0d7c8f6e52115bb82fa018d81a8d0cae35dde5">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\converter-scalars-2.1.0_f5920d01211ed20b03dd2977fe20d8ac1a753675.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.github.bumptech.glide\okhttp3-integration\1.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="07a1832fdb6b44c0f4ec761ac3de02bfd3508269">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.github.bumptech.glide-okhttp3-integration-1.4.0_15d995df69f5cf64c0374f5b287af74d6adae7a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_b45e0ca82336485c3a6b0fe28996944e5b74d548.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_1643af2e936cb8c8581e8685966385d16616f1d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\retrofit-2.1.0_02cdaa5f093e78b272a8b951b62057cb62740b8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\okhttp-3.3.0_01cc990dcf2d17d688f9fc2e7c93ea22339e41ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_9aa6fbcebf49e0eb04026d6e2bf1f74d31d47ea2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\gson-2.7_2e85dbf641c4a16c73925139bd4ff50ebb0450dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_5a204df4e07c84cf8381d3d2c9123114beb37d92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_c1d0f349874dc15ac1568691ab3ee18806a61897.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.2.1_ac5c7f50bfaba8cdf1af2391a5ab3636578acd37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\libs\jpush-android_v3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8e0e2966df7e5f6062849be632a5c7d62d3a38fa">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\jpush-android_v3.0.1_3f7559ae43838b2ee22e7c13a6d5d0b71ca3fc4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_6788101c4c8cdfec4f2323023343b37bc9ea9b68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_3df1691dbd827f234b6889f75ec772ebbc4db1c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\okio-1.8.0_06f7f952010e37a20e0067d81e65675288b9e24f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_a45405e82f9eb237681c9cf66b4eb54d7b88c9f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\converter-gson-2.1.0_fc6d109c83c05cddded4b5ea732ed5dd7c938086.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\io.reactivex-rxandroid-1.2.1_241e7f54fed41b6dafdf34723722fc1393e1bd74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8b1b171a1db948c0f68522538726dd8f256b6e88">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_4ac5b95e2062c978218de3798018474e36577a6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava\2.1.0\693eddc23e87ab13f9cf5001707ce8e7e1d1ff01\adapter-rxjava-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\adapter-rxjava-2.1.0_a922f2c9139fd2cbbf2500b5aa528f1e500fa2f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.4.0_d7e84aaf59518257602eb673d5823dd6afbb8f4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\glide-3.7.0_1f3ddf859a86296da03fddcf50d19f29d652df81.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\libs\libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="11b09244aedaa51bfd09269637be7c32c60da314">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\libammsdk_607551089b556b39694512933f307a5e5e9fb023.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_cc0e9217e20c324a333a31d1a149fe94d9e0a30c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_b98889043a0835974a5f355b99936690638048f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\libs\jcore-android_v1.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c49fbb60c08a0d71decd2f092da4677fb7872f04">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\jcore-android_v1.1.0_afb2383dbbd7c475282291b3314e5c36fee8c0e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_4ee62ea409af6b126d99ffd3874a4735cbd59451.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.2.1\4e4cfa4adc74521d5966799fa5ab70b733552f68\rxjava-1.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4e4cfa4adc74521d5966799fa5ab70b733552f68">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\rxjava-1.2.1_aa891a92fd7005674dbfb16a988b401dae763c6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ASworkspace\ndonline\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="D:\ASworkspace\ndonline\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_9fd2f3ab3a3d6108746aaaca5ec5e9a864863c18.jar" />
+    </item>
+
+</items>

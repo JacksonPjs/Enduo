@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_huise"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="奖励规则"
+            android:textColor="@color/text_font"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="邀请好友(18周岁以上的非恩多在线网用户)注册，在注册之日起30日内完成首笔投资，邀请人将获得被邀请人投资收益金额的10%作为奖励。"
+            android:textSize="@dimen/text_samll_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="方法一：复制并发送连接"
+            android:textColor="@color/text_font"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="欢迎来到恩多在线，分享推荐链接:"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/text_samll_size" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="www.hhhdsakjdasjdaldjlkj="
+                    android:textColor="@color/text_font"
+                    android:textSize="@dimen/text_samll_size"
+                    android:id="@+id/tjrwww" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="135646545"
+                    android:textColor="@color/text_font"
+                    android:textSize="@dimen/text_samll_size"
+                    android:id="@+id/phoneid" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="复制链接"
+                android:textColor="#fff"
+                android:id="@+id/copy_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#fff"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="序号"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/text_samll_size"
+        android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="用户名"
+            android:textSize="@dimen/text_samll_size"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="注册时间"
+            android:textSize="@dimen/text_samll_size"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/text_samll_size"
+            android:text="是否充值"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textSize="@dimen/text_samll_size"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="是否投资"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textSize="@dimen/text_samll_size"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="推荐奖励"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <com.pvj.xlibrary.loadinglayout.LoadingLayout
+        android:id="@+id/loadinglayout"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+    </com.pvj.xlibrary.loadinglayout.LoadingLayout>
+</LinearLayout>

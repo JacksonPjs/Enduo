@@ -1,0 +1,23 @@
+一：该包下 是处理图片的
+     如果想设置网络访问库
+     在MyApplication在初始化：     OkHttpUtils.getOkHttpClient()：这个为okttp3单列
+     Glide.get(this).register(GlideUrl.class, InputStream.class,new OkHttpUrlLoader.Factory(OkHttpUtils.getOkHttpClient()));
+
+
+ 基本用法：Glide.with(this).load(图片).into(imageView); 详细用法见：glide_detail.txt
+  有如下类-----CustomGlideModule类；
+             作用：自定义缓存类 设置图片质量  缓存内存大小
+         如何配置？？？？？？
+            在AndroidManifest.xml文件下
+              <application 节点下
+
+             <meta-data android:name="包名.CustomGlideModule" android:value="GlideModule"/>
+
+        -----BitmapRotateTransformation类
+             图像旋转类
+             如何使用？
+               .transform(new BitmapRotateTransformation(this,90)) //90为度数
+
+        -------BitmapCircleTransformation类
+               圆形头像等
+                 .transform(new BitmapCircleTransformation(this))

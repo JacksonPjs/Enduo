@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EF8829</color>
+    <color name="colorPrimary2">#F57D0E</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="font_color1">#666666</color>
+
+
+    <color name="font">#666666</color>
+
+    <color name="bg_huise">#EEEEEE</color>
+    <color name="bg_2">#f28300</color>
+
+    <!--   提示字体-->
+    <color name="text_hint">#999</color>
+    <!--  小标题字体  -->
+    <color name="text_font">#666</color>
+
+
+    <color name="xixian">#d8d8d8</color>
+
+    <color name="ll_nor">#FFF</color>
+    <color name="ll_pre">#F8F8F8 </color>
+
+    <!--底部 四个button 文字颜色  -->
+    <color name="bar_clor">#666</color>
+
+    <!--首页  月月盈  季季满  文字颜色  -->
+    <color name="mouth">#288fee</color>
+    <color name="season">#50cc4e</color>
+
+
+    <color name="mouth_btn_bg">#2990ef</color>
+    <color name="season_btn_bg">#30c67e</color>
+    <color name="dayday_btn_bg">#e27850</color>
+
+    <color name="mouth_bg">#33a4c6</color>
+    <color name="season_bg">#4dc595</color>
+    <color name="dayday_bg">#f39a4a</color>
+
+
+    <color name="text_newbie">#333231</color>
+    <color name="text_blue">#0080ff</color>
+    <color name="text_huise">#666462</color>
+    <color name="text_org">#ff5e00</color>
+
+    <color name="deep_transparent">#bb000000</color>
+    <color name="white">#fff</color>
+    <color name="ed_focused">#728ea3</color>
+    <color name="ed_normal">#BDC7D8</color>
+    <color name="status4">#f52f07</color>
+    <color name="status6">#4af598</color>
+    <color name="statuselse">#aaa</color>
+
+</resources>

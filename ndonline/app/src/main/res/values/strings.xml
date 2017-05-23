@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">恩多在线</string>
+    <string name="title_activity_forget_pass_word1">ForgetPassWord1Activity</string>
+    <string name="home">首页</string>
+    <string name="money">理财</string>
+    <string name="about">关于</string>
+    <string name="mine">我的</string>
+    <string name="home_title">理财精选</string>
+    <string name="newbie">新手专享</string>
+    <string name="home_text_blue">新用户送现金券</string>
+    <string name="quan_go">去领券</string>
+    <string name="quan_select">请选择优惠券</string>
+    <string name="percent">12.3%</string>
+    <string name="shouyi">预期年化收益</string>
+    <string name="licai">精选理财</string>
+    <string name="interest">您感兴趣的</string>
+    <string name="text">仔细看下上图，其实这个自定义的控件也就由两部分组成，一个是正常的显示文本部分，另外一个是收放的按钮，因此我们可以通过组合布局的形式来实现
+
+首先写死id，这是因为我们要在组合布局里面操作这2个TextView，所以最简单的途径就是直接拿到这2个对象进行使用
+    仔细看下上图，其实这个自定义的控件也就由两部分组成，一个是正常的显示文本部分，另外一个是收放的按钮，因此我们可以通过组合布局的形式来实现
+
+首先写死id，这是因为我们要在组合布局里面操作这2个TextView，所以最简单的途径就是直接拿到这2个对象进行使用
+        仔细看下上图，其实这个自定义的控件也就由两部分组成，一个是正常的显示文本部分，另外一个是收放的按钮，因此我们可以通过组合布局的形式来实现
+
+首先写死id，这是因为我们要在组合布局里面操作这2个TextView，所以最简单的途径就是直接拿到这2个对象进行使用
+        仔细看下上图，其实这个自定义的控件也就由两部分组成，一个是正常的显示文本部分，另外一个是收放的按钮，因此我们可以通过组合布局的形式来实现
+首先写死id，这是因为我们要在组合布局里面操作这2个TextView，所以最简单的途径就是直接拿到这2个对象进行使用
+        仔细看下上图，其实这个自定义的控件也就由两部分组成，一个是正常的显示文本部分，另外一个是收放的按钮，因此我们可以通过组合布局的形式来实现
+首先写死id，这是因为我们要在组合布局里面操作这2个TextView，所以最简单的途径就是直接拿到这2个对象进行使用
+        仔细看下上图，其实这个自定义的控件也就由两部分组成，一个是正常的显示文本部分，另外一个是收放的按钮，因此我们可以通过组合布局的形式来实现
+首先写死id，这是因为我们要在组合布局里面操作这2个TextView，所以最简单的途径就是直接拿到这2个对象进行使用
+        仔细看下上图，其实这个自定义的控件也就由两部分组成，一个是正常的显示文本部分，另外一个是收放的按钮，因此我们可以通过组合布局的形式来实现
+
+
+    </string>
+    <string name="to_expand_hint">展开</string>
+    <string name="to_shrink_hint">收起</string>
+    <string name="topay">立即充值</string>
+    <string name="logintopay">登录查看</string>
+    <string name="discount_default">您暂无可用优惠券</string>
+    <string name="discount_jx_item1">· 限新手标使用，该券限用一次；</string>
+    <string name="discount_jx_item2">· 用户最终可获得其投资产生的收益；</string>
+    <string name="discount_dj_item1">· 在投资时使用，只计算其额外收益；</string>
+    <string name="discount_dj_item2">· 该券最高使用比例是投资额的1%；</string>
+    <string name="discount_dj_item3">· 该券不与其他优惠券同时使用</string>
+    <string name="pay_tip1">1.所有充值资金将由第三方平台托管管理;</string>
+    <string name="pay_tip2">2.在线充值所产生的费用，由恩多在线平台支付;</string>
+    <string name="pay_tip3">3.请注意您的银行卡充值限制，以免造成不便;</string>
+    <string name="pay_tip4">4.充值资金未投资提现的，收取0.25%提现手续费;</string>
+    <string name="pay_tip5">5.如果充值金额没有及时到账，请耐心等待几分钟，也可及时联系我们在线客服人员;</string>
+    <string name="pay_tip6">6.严禁利用充值提现功能进行信用卡套现、转账、洗钱等行为，一经发现，立即封停账号;</string>
+
+</resources>

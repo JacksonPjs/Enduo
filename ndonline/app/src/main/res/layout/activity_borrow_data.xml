@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_back" />
+
+    <com.pvj.xlibrary.loadinglayout.LoadingLayout
+        android:id="@+id/layout_contiant_girdview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/girdview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_huise"
+             android:horizontalSpacing="5dp"
+            android:numColumns="2">
+        </GridView>
+    </com.pvj.xlibrary.loadinglayout.LoadingLayout>
+</LinearLayout>

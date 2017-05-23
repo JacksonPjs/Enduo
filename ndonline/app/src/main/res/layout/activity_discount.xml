@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_huise"
+    android:orientation="vertical">
+    <include layout="@layout/layout_back" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/putong_team"
+            android:background="@color/ll_nor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:text="未使用" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/text_huise" />
+
+        <TextView
+            android:id="@+id/xinshou_team"
+            android:background="@color/ll_nor"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_newbie"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:text="已使用" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/text_huise" />
+
+        <TextView
+            android:id="@+id/jilu_team"
+            android:background="@color/ll_nor"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_newbie"
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:text="已过期" />
+    </LinearLayout>
+    <include layout="@layout/line_match_parent"></include>
+</LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/biao_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/biao_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ll_nor"
+    android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+
+                    android:layout_width="2dp"
+                    android:layout_height="15dp"
+                    android:background="@color/text_org"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_vertical"
+                    ></View>
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="恩多宝"
+                    android:textColor="@color/text_newbie"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/biao_statas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/name"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/name"
+                    android:background="@drawable/edit_text_border0_222"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_samll_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="4"
+                        android:layout_marginTop="10dp"
+                        >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lilv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/percent"
+                            android:textColor="@color/text_org"
+                            android:textSize="@dimen/text_lager_size" />
+
+                        <TextView
+
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/shouyi"
+                            android:textColor="@color/text_huise"
+                            android:textSize="@dimen/text_samll_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/mouth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="180天"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/text_newbie"
+                            android:textSize="@dimen/title_size" />
+
+                        <TextView
+                            android:id="@+id/miaoshu"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="投资期限"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/text_huise"
+                            android:textSize="@dimen/text_samll_size" />
+                    </LinearLayout>
+                    </LinearLayout>
+
+                        <com.pvj.xlibrary.imageview.CircleProgressView
+                            android:id="@+id/circleProgressbar"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="match_parent"
+                            />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

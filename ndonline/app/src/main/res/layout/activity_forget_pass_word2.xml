@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_huise"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_back" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+      android:background="#fff"
+        android:layout_height="wrap_content">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:text="验证码已发送至您的手机"
+       android:gravity="center"
+       />
+    <TextView
+        android:id="@+id/phone_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="139*****6546"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+      android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/edit_text_border0"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <EditText
+                android:id="@+id/forget_yzm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="请输入手机验证码"
+                android:textSize="12sp"
+                android:inputType="phone"
+                android:maxLength="6"
+                android:maxLines="1"
+                />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/forget_get"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="获取验证码"
+
+                    android:layout_alignParentRight="true"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/forget_go2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_border_selector"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="提交"
+        android:textSize="18sp"
+        android:textColor="#fff" />
+
+
+</LinearLayout>
+
+

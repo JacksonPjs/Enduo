@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_huise"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_back" />
+
+    <com.pvj.xlibrary.loadinglayout.LoadingLayout
+        android:id="@+id/loadinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_text_border0"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="真实姓名"
+                android:textColor="@color/font_color1"
+                android:textSize="@dimen/text_size" />
+
+
+
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="请输入真实姓名"
+                android:inputType="text"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textSize="@dimen/text_15_size"
+                android:textColor="#666"
+                android:textColorHint="#ccc"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_text_border0"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="身份证号"
+                android:textColor="@color/font_color1"
+                android:textSize="@dimen/text_size" />
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="请输入身份证号"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="@dimen/text_15_size"
+                android:textColor="#666"
+                android:textColorHint="#ccc"
+                android:id="@+id/sfz" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/rez_go"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border_selector"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="认证"
+        android:textSize="@dimen/text_size"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingRight="5dp"
+            android:text="为了保障您的账号安全，充值,提现和投资必须实名认证，一经实名，无法修改，请谨慎填写"
+
+            android:textSize="@dimen/text_midle_size" />
+    </LinearLayout>
+    </LinearLayout>
+    </com.pvj.xlibrary.loadinglayout.LoadingLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,248 @@
+一， Google推荐图片加载框架
+*Glide比Picasso有90%的相似；
+*Glide比Picasso加载速度更快；Glide比Picasso需求更大的空间来缓存。
+
+二 导包：compile 'com.github.bumptech.glide:glide:3.7.0'
+
+三,基本用法
+
+Glide.with(this).load(图片).into(imageView);
+
+图片可以是 资源图片 R.mipmap.icluancher ;
+         SD 图片 new File（“路径”）
+         网络图片  url地址
+         资产目录图片：file：///android_asset/logo.png
+
+四，常用设置
+ 设置占位图片
+ Glie.with(context)
+      .load(url)
+      .placeholder(R.mipmap.empty)
+      .error(R.mipmap.error)
+      .into(imageView);
+ 2,淡入淡出
+      .crossFade()
+ 3.无动画
+      .dontAnimate()
+ 4,图片重新调整大小
+      .override(width,height)
+ 5 图片裁剪类型 centerCrop , fitCenter
+ 6.自定义图形转换
+      .transform();
+ 7,放弃内存缓存memory cache
+      .shipMemoryCache(true)
+      .diskCacheStrategy(DiskCacheStrategy.NONE)
+   以下为四种缓存方式
+   DiskCacheStrategy.NONE 什么都不缓存，就像刚讨论的那样
+   DiskCacheStrategy.SOURCE 仅仅只缓存原来的全分辨率的图像。在我们上面的例子中，将会只有一个 1000x1000 像素的图片
+   DiskCacheStrategy.RESULT 仅仅缓存最终的图像，即，降低分辨率后的（或者是转换后的）
+   DiskCacheStrategy.ALL 缓存所有版本的图像（默认行为）
+
+五：Glide与Picssso区别
+ Glide比Picasso加载速度快，但Glide比Picasso需要更大的空间来缓存
+ Glide加载图片及磁盘缓存的方式都优于Picasso，且Glide更有利于减少OutOfMemoryError的发生；
+ GIF动画是Glide的杀手锏
+
+六：Glide高级用户及性能优化
+ *设置网络访问库
+ 默认使用HttpUrlConnection 访问网络，可以配置okhttp ；
+ (1)apptication 配置
+
+  如果希望okhtpp 到包
+  ( compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+   //好像不要也可以 如果使用了retrofit2    compile 'com.squareup.okhttp3:okhttp:3.3.0')
+
+  Glide.get(this).register(GlideUrl.class, InputStream.class,
+                new OkHttpUrlLoader.Factory(OkHttpClientUtils.getOkHttpSingletonInstance()));
+
+ *监听加载速度
+    .into(new GlideDrawableImageViewTarget(imageView_show_glide) {
+       @Override   // 加载失败
+          public void onLoadFailed(Exception e, Drawable errorDrawable) {
+                super.onLoadFailed(e, errorDrawable);
+           progressBar_main.setVisibility(View.GONE);
+           }
+
+          @Override  // 加载开始
+           public void onLoadStarted(Drawable placeholder) {
+               super.onLoadStarted(placeholder);
+               progressBar_main.setVisibility(View.VISIBLE);
+            }
+
+             @Override  // 加载结束
+            public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> animation) {
+                super.onResourceReady(resource, animation);
+                progressBar_main.setVisibility(View.GONE);
+                }
+          });
+
+ * 自定义缓存
+     .diskCacheStrategy(DiskCacheStrategy.NONE)
+      以下为四种缓存方式
+        DiskCacheStrategy.NONE 什么都不缓存，就像刚讨论的那样
+        DiskCacheStrategy.SOURCE 仅仅只缓存原来的全分辨率的图像。在我们上面的例子中，将会只有一个 1000x1000 像素的图片
+        DiskCacheStrategy.RESULT 仅仅缓存最终的图像，即，降低分辨率后的（或者是转换后的）
+        DiskCacheStrategy.ALL 缓存所有版本的图像（默认行为）
+
+
+    //清除内存缓存
+      Glide.get(mContext).clearMemory();
+    //清除磁盘缓存  子线程完成
+       new Thread(new Runnable() {
+           @Override
+           public void run() {
+              Glide.get(mContext).clearDiskCache();
+              }
+              }).start();
+
+     --------------自定义缓存类 设置图片质量  缓存内存大小------------------
+     import android.content.Context;
+
+     import com.bumptech.glide.Glide;
+     import com.bumptech.glide.GlideBuilder;
+     import com.bumptech.glide.load.DecodeFormat;
+     import com.bumptech.glide.load.engine.cache.ExternalCacheDiskCacheFactory;
+     import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
+     import com.bumptech.glide.module.GlideModule;
+
+     /**
+      * Created by StevenWang on 16/3/19.
+      */
+     public class CustomGlideModule implements GlideModule {
+         @Override
+         public void applyOptions(Context context, GlideBuilder builder) {
+
+     //        .setMemoryCache(MemoryCache memoryCache)
+     //        .setBitmapPool(BitmapPool bitmapPool)
+     //        .setDiskCache(DiskCache.Factory diskCacheFactory)
+     //        .setDiskCacheService(ExecutorService service)
+     //        .setResizeService(ExecutorService service)
+     //        .setDecodeFormat(DecodeFormat decodeFormat)
+
+             builder.setDecodeFormat(DecodeFormat.PREFER_ARGB_8888);
+
+
+             int cacheSize = 10 << 20; // 内部磁盘缓存 或者外部磁盘缓存
+             builder.setDiskCache(
+                     new InternalCacheDiskCacheFactory(context, cacheSize)
+                     //new ExternalCacheDiskCacheFactory(context, cacheSize)
+             );
+         }
+
+         @Override
+         public void registerComponents(Context context, Glide glide) {
+             // nothing to do here
+         }
+     }
+
+      如何配置？？？？？？
+      在AndroidManifest.xml文件下
+       <application 节点下
+
+      <meta-data android:name="包名.CustomGlideModule" android:value="GlideModule"/>
+
+     --------------------------------分割线--------------------------------------
+
+ * 自定义图形转换(Transformation)
+     图片旋转类
+     用法：
+        .transform(new BitmapRotateTransformation(this,90))
+     -----------------------------自定义类 图片旋转类-------------------------------------
+     import android.content.Context;
+     import android.graphics.Bitmap;
+     import android.graphics.Matrix;
+     import android.os.Build;
+
+     import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
+     import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
+
+     /**
+      *   图片旋转 类   旋转角度可传
+      */
+     public class BitmapRotateTransformation extends BitmapTransformation {
+
+        // 旋转角度
+         private float rotateRotationAngle = 0f;
+
+        // 上下文 旋转角度
+         public BitmapRotateTransformation(Context context, float rotateRotationAngle) {
+             super(context);
+
+             this.rotateRotationAngle = rotateRotationAngle;
+         }
+
+         @Override
+         protected Bitmap transform(BitmapPool pool, Bitmap toTransform, int outWidth, int outHeight) {
+             Matrix matrix = new Matrix();
+             matrix.postRotate(rotateRotationAngle);
+             Bitmap result = Bitmap.createBitmap(toTransform, 0, 0, toTransform.getWidth(), toTransform.getHeight(), matrix, true);
+             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                 result.setConfig(Bitmap.Config.ARGB_8888);
+             }
+             return result;
+         }
+
+         @Override
+         public String getId() {
+             return getClass().getName();
+         }
+     }
+
+     * 圆形图片类
+      用法：
+        .transform(new BitmapCircleTransformation(this))
+     -----------------------------------自定义类 圆形 旋转类-------------------------------------
+     import android.content.Context;
+     import android.graphics.Bitmap;
+     import android.graphics.BitmapShader;
+     import android.graphics.Canvas;
+     import android.graphics.Paint;
+
+     import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
+     import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
+
+     /**
+      *
+      */
+     public class BitmapCircleTransformation extends BitmapTransformation {
+         public BitmapCircleTransformation(Context context) {
+             super(context);
+         }
+
+         @Override
+         protected Bitmap transform(BitmapPool pool, Bitmap toTransform, int outWidth, int outHeight) {
+             return circleCrop(pool , toTransform);
+         }
+
+
+         private Bitmap circleCrop(BitmapPool pool, Bitmap source) {
+             if (source == null) return null;
+
+             int size = Math.min(source.getWidth(), source.getHeight());
+             int x = (source.getWidth() - size) / 2;
+             int y = (source.getHeight() - size) / 2;
+
+             //创建一个正方形的空白bitmap对象，将来在该Bitmap上绘制图案
+             Bitmap result = pool.get(size, size, Bitmap.Config.ARGB_4444);
+             if (result == null) {
+                 result = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_4444);
+             }
+
+             Canvas canvas = new Canvas(result);
+             Paint paint = new Paint();
+             paint.setAntiAlias(true);
+             // 选择原图的中心点，裁切出一个正方形区域，将来绘制在空白的Bitmap上
+             Bitmap squared = Bitmap.createBitmap(source, x, y, size, size);
+             paint.setShader(new BitmapShader(squared, BitmapShader.TileMode.CLAMP, BitmapShader.TileMode.CLAMP));
+             float r = size / 2f;
+             canvas.drawCircle(r, r, r, paint);
+             return result;
+         }
+
+         @Override
+         public String getId() {
+             return getClass().getName();
+         }
+
+     }
+      ---------------------------------------分割线--------------------------------------

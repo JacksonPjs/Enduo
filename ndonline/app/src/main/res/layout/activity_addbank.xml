@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_huise"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_back" />
+
+    <com.pvj.xlibrary.loadinglayout.LoadingLayout
+        android:id="@+id/layout_contiant_bank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edit_text_border0_hui"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="真实姓名"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+
+                android:text="吴奇隆"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/name" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_border0"
+            android:drawableRight="@mipmap/go"
+            android:padding="10dp"
+            android:text="选择银行"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/bankbtn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_text_border0"
+            android:orientation="horizontal"
+
+            android:gravity="center_vertical"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银行卡号"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:background="@null"
+                android:hint="请输入银行卡"
+                android:textColorHint="@color/text_hint"
+                android:textColor="@color/text_font"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"
+                android:maxLength="24"
+                android:id="@+id/card" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_border0"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开户支行"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+                android:hint="支行名称"
+                android:background="@null"
+                android:textColorHint="@color/text_hint"
+                android:textColor="@color/text_font"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/zhihang" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_go"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border_selector"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="绑定"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </com.pvj.xlibrary.loadinglayout.LoadingLayout>
+</LinearLayout>
+
+

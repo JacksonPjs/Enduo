@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+
+    >
+
+    <!-- 普通底部导航 -->
+    <LinearLayout
+        android:id="@+id/main_bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/re_weixin1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/ib_weixin1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_activity" />
+
+            <TextView
+                android:id="@+id/tv_weixin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_weixin1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="稳健收益"
+                android:textColor="@color/text_newbie"
+                android:textSize="@dimen/text_high_size"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/re_contact_list1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/ib_contact_list1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_earnings" />
+
+            <TextView
+                android:id="@+id/tv_contact_list1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_contact_list1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="资金安全"
+                android:textColor="@color/text_newbie"
+                android:textSize="@dimen/text_high_size" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/re_find1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/ib_find1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_invitation" />
+
+            <TextView
+                android:id="@+id/tv_find1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_find1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="项目真实"
+                android:textColor="@color/text_newbie"
+                android:textSize="@dimen/text_high_size"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/re_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/ib_four"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_security" />
+
+            <TextView
+                android:id="@+id/tv_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_four"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="风控保障"
+                android:textColor="@color/text_newbie"
+                android:textSize="@dimen/text_high_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/line_match_parent"></include>
+</LinearLayout>

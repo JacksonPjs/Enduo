@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relayout"
+    android:background="#33000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    >
+
+    <com.pvj.xlibrary.loadingview.AVLoadingIndicatorView
+        android:id="@+id/llivds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+      android:layout_centerHorizontal="true"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="LineScalePulseOutIndicator"
+        app:indicatorColor="@color/colorPrimary">
+
+    </com.pvj.xlibrary.loadingview.AVLoadingIndicatorView>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_below="@id/llivds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:text="加载中..."
+        />
+</RelativeLayout>

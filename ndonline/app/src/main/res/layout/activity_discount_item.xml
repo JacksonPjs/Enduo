@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_huise"
+    android:layout_margin="2dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_white_circular"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_discount_tiyan"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:orientation="horizontal"
+            android:id="@+id/id_content"
+            android:layout_centerVertical="true"
+
+            >
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥1992"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+<com.enduo.ndonline.ui.widget.DiscountView
+    android:id="@+id/discountview"
+    android:layout_toRightOf="@id/id_content"
+    android:layout_marginLeft="30dp"
+    android:layout_width="30dp"
+    android:layout_height="100dp"
+    />
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/discountview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/gz1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="12sp"
+                android:text="@string/discount_dj_item1"
+                />
+            <TextView
+                android:layout_below="@+id/gz1"
+                android:id="@+id/gz2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:text="@string/discount_dj_item1"
+                />
+            <TextView
+                android:id="@+id/gz3"
+                android:layout_below="@+id/gz2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:text="@string/discount_dj_item3"
+                />
+
+        </RelativeLayout>
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/bg01"
+            android:focusable="false"
+
+            />
+        <TextView
+            android:id="@+id/cv_countdownView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/checkbox"
+            android:text="@string/app_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/season"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

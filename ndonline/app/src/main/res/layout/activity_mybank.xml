@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_huise"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_back" />
+
+    <com.pvj.xlibrary.loadinglayout.LoadingLayout
+        android:id="@+id/layout_contiant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/addbank_contaitnr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+                <TextView
+                    android:id="@+id/addbank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@mipmap/icon_add1"
+                    android:padding="10dp"
+                    android:text="添加银行卡" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/bank_contair"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@drawable/button_border_lan"
+                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_bank1"
+                    />
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+                   >
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+
+                        android:orientation="horizontal"
+                        >
+                    <TextView
+                        android:id="@+id/bankname"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="银行"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/text_lager_size" />
+
+                        <TextView
+                            android:id="@+id/jiebang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:background="@drawable/button_border_bank"
+                            android:text="解绑"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="储蓄卡"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/text_samll_size" />
+
+                    <TextView
+                        android:id="@+id/banknum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="123123"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/text_lager_size" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="温馨提示"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,为了保障你的账户安全。请正确输入您的银行卡.\n2,解除银行卡将无法进行提现."
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/text_samll_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.pvj.xlibrary.loadinglayout.LoadingLayout>
+</LinearLayout>
+
+

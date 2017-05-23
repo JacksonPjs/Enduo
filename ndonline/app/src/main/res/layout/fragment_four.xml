@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_huise"
+    android:orientation="vertical">
+
+    <include layout="@layout/home_titile"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <View
+            android:background="#d6d6d6"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#666"
+            android:textSize="@dimen/text_midle_size"
+            android:text="理财助手" />
+
+        <View
+            android:background="#d6d6d6"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_hight"
+            android:background="@drawable/ll_selector"
+            android:drawableLeft="@mipmap/icon_calculator"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/go"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="收益计算器"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/calculator" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_hight"
+            android:background="@drawable/ll_selector"
+            android:drawableLeft="@mipmap/icon_help"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/go"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            android:text="帮助中心"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/help" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_hight"
+            android:background="@drawable/ll_selector"
+            android:drawableLeft="@mipmap/icon_guidelines"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/go"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            android:text="新手指引"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/guide" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="15dp">
+
+        <View
+            android:background="#d6d6d6"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#666"
+            android:textSize="@dimen/text_midle_size"
+            android:text="关于恩多" />
+
+        <View
+            android:background="#d6d6d6"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_hight"
+            android:background="@drawable/ll_selector"
+            android:drawableLeft="@mipmap/icon_about"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/go"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="公司简介"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/summary" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_hight"
+            android:background="@drawable/ll_selector"
+            android:drawableLeft="@mipmap/icon_brand"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/go"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            android:text="品牌故事"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/brand" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_hight"
+            android:background="@drawable/ll_selector"
+            android:drawableLeft="@mipmap/icon_calculator"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/go"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="联系我们"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/contact" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_hight"
+            android:background="@drawable/ll_selector"
+            android:drawableLeft="@mipmap/icon_message"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/go"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="平台公告"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/notice" />
+
+    </LinearLayout>
+
+</LinearLayout>

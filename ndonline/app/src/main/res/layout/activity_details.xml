@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<include
+    android:id="@+id/ll_title"
+    layout="@layout/titlebar_back"></include>
+    <RelativeLayout
+        android:layout_below="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_popupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <include layout="@layout/pay_popup" />
+    </LinearLayout>
+
+        <com.enduo.ndonline.ui.widget.PullUpToLoadMore
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ptlm"
+            android:orientation="vertical"
+            >
+            <com.enduo.ndonline.ui.widget.MyScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                >
+                <include layout="@layout/activity_details_view1"></include>
+            </com.enduo.ndonline.ui.widget.MyScrollView>
+            <com.enduo.ndonline.ui.widget.MyScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                >
+                <include layout="@layout/activity_details_view2"></include>
+            </com.enduo.ndonline.ui.widget.MyScrollView>
+
+
+        </com.enduo.ndonline.ui.widget.PullUpToLoadMore>
+
+
+    </RelativeLayout>
+</RelativeLayout>

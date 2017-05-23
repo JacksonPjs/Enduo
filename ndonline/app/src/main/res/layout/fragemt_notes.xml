@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.enduo.ndonline.ui.widget.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myscrollview"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/xixian"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="投资人"
+            android:gravity="center"
+            android:textColor="@color/text_newbie"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="金额"
+            android:gravity="center"
+            android:textColor="@color/text_newbie"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="时间"
+            android:gravity="center"
+            android:textColor="@color/text_newbie"
+
+            />
+    </LinearLayout>
+
+
+    <com.pvj.xlibrary.loadingrecyclerview.LoadMoreRecyclerLoadingLayout
+        android:id="@+id/public_listview"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"></com.pvj.xlibrary.loadingrecyclerview.LoadMoreRecyclerLoadingLayout>
+
+    </LinearLayout>
+</com.enduo.ndonline.ui.widget.MyScrollView>

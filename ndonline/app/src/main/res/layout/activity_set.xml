@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+   >
+ <include layout="@layout/layout_back" />
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:divider="@drawable/divider"
+      android:background="@drawable/ll_selector"
+      android:orientation="vertical"
+      android:showDividers="middle">
+
+
+   <LinearLayout
+       android:id="@+id/clearmmmm"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/text_hight">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/text_hight"
+
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="清除缓存"
+        android:textSize="@dimen/text_size"
+         />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="@dimen/text_hight"
+        android:gravity="right"
+        android:paddingRight="5dp"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/number_size" />
+   </LinearLayout>
+
+
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/text_hight"
+       android:background="@drawable/ll_selector"
+       android:drawablePadding="10dp"
+       android:drawableRight="@mipmap/go"
+       android:gravity="center_vertical"
+       android:paddingLeft="15dp"
+       android:paddingRight="15dp"
+       android:text="检查更新"
+       android:textSize="@dimen/text_size"
+       android:id="@+id/updata" />
+ <TextView
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/text_hight"
+       android:background="@drawable/ll_selector"
+       android:drawablePadding="10dp"
+       android:drawableRight="@mipmap/go"
+       android:gravity="center_vertical"
+       android:paddingLeft="15dp"
+       android:paddingRight="15dp"
+       android:text="账号安全"
+       android:textSize="@dimen/text_size"
+       android:id="@+id/safe" />
+
+
+
+
+  </LinearLayout>
+
+
+  <Button
+      android:layout_alignParentBottom="true"
+      android:id="@+id/exit"
+      android:textColor="#fff"
+      android:background="@android:color/holo_red_light"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+
+      android:text="退出登录"/>
+ </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_huise"
+    >
+    <include layout="@layout/titlebar_back"
+        android:id="@+id/ll_title"
+        ></include>
+
+<LinearLayout
+    android:layout_below="@+id/ll_title"
+    android:id="@+id/ll_data"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/ll_nor"
+    android:layout_marginTop="1dp"
+    android:paddingBottom="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年化收益"
+            android:textColor="@color/text_huise"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/text"
+            android:background="@drawable/half_fillet"
+            android:layout_marginRight="-2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="180天期限"
+            android:textSize="11sp"
+            android:textColor="@color/season"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12.8%"
+            android:textColor="@color/text_org"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/text"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/maxAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="剩余金额：300000000元"
+            android:layout_below="@+id/data"
+            android:layout_alignTop="@+id/percent"
+            />
+    </RelativeLayout>
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_money"
+        android:layout_below="@id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_money_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="可用资金:"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_toRightOf="@id/tv_money_title"
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300.00元"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_newbie"
+
+            />
+        <Button
+            android:id="@+id/gotopay"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="立即充值"
+            android:background="@drawable/button_border"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_edit"
+        android:layout_below="@+id/rl_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ll_nor"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:id="@+id/symbol"
+            android:textSize="20sp"
+            android:textColor="@color/text_newbie"
+            android:layout_centerVertical="true"
+
+            />
+
+        <EditText
+            android:id="@+id/ed_money"
+            android:layout_toRightOf="@+id/symbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="100元起投"
+            android:layout_centerVertical="true"
+            android:digits="0123456789"
+            android:maxLength="9"
+            android:background="@null"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            />
+            <View
+                android:layout_below="@+id/ed_money"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/xixian"
+                android:layout_marginTop="5dp"
+                ></View>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:id="@+id/earnings1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预期收益:"
+                android:textColor="@color/text_huise"
+                />
+                <TextView
+                    android:id="@+id/earnings"
+                    android:layout_toRightOf="@+id/earnings1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textColor="@color/text_org"
+                    />
+            <TextView
+                android:id="@+id/earnings2"
+                android:layout_toRightOf="@+id/earnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="@color/text_huise"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资即表示同意" />
+
+                <TextView
+                    android:id="@+id/fuwutiaolie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《认购协议》"
+                    android:textColor="#2990ef" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ll_edit"
+        >
+        <ImageView
+            android:id="@+id/quan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_discount"
+            />
+        <TextView
+            android:layout_toRightOf="@id/quan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_newbie"
+
+            />
+        <RelativeLayout
+            android:id="@+id/rl_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/go"
+
+                />
+
+            <TextView
+                android:id="@+id/restext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/img"
+                android:text="@string/quan_select"
+                android:textColor="@color/text_huise"
+                android:textSize="@dimen/text_15_size" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+
+    >
+
+    <TextView
+        android:id="@+id/buy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:background="@color/text_org"
+        android:text="立即购买"
+        android:textColor="#fff" />
+
+</LinearLayout>
+
+
+</RelativeLayout>

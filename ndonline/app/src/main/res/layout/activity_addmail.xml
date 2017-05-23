@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_huise"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_back" />
+
+    <com.pvj.xlibrary.loadinglayout.LoadingLayout
+        android:id="@+id/layout_contiant_bank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_marginTop="1dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/edit_text_border0"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="邮箱"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/text_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:hint="请输入邮箱账号"
+                        android:textColorHint="@color/text_hint"
+                        android:textColor="@color/text_font"
+                        android:textSize="@dimen/text_size"
+                        android:maxLines="1"
+                        android:maxLength="24"
+                        android:id="@+id/number" />
+
+                </LinearLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edit_text_border0"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="验证码"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/text_size" />
+
+                    <EditText
+                        android:layout_toRightOf="@+id/tv_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:hint="请输入验证码"
+                        android:textColorHint="@color/text_hint"
+                        android:textColor="@color/text_font"
+                        android:textSize="@dimen/text_size"
+                        android:maxLines="1"
+                        android:maxLength="24"
+                        android:id="@+id/code" />
+
+                    <Button
+                        android:id="@+id/btn_code"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="20dp"
+                        android:text="发送验证码"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/ll_nor"
+                        android:background="@drawable/button_border_selector"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_go"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_border_selector"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="绑定"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </com.pvj.xlibrary.loadinglayout.LoadingLayout>
+</LinearLayout>
+
+

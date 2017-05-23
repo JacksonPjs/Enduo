@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlcont"
+   android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bankname"
+        android:layout_width="wrap_content"
+        android:text="银行"
+        android:textSize="@dimen/text_midle_size"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/bankmap"
+        android:layout_width="15dp"
+        android:src="@mipmap/icon_selected"
+        android:layout_alignParentRight="true"
+        android:layout_height="15dp" />
+</RelativeLayout>
