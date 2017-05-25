@@ -29,8 +29,26 @@ public class LoginBean {
     private String token;
     private String userName;
     private String cellPhone;
+    private String realName;
+    private String bankCardNo;
     private double usableAmount;
     private double total1;
+
+    public String getRealName() {
+        return realName;
+    }
+
+    public void setRealName(String realName) {
+        this.realName = realName;
+    }
+
+    public String getBankCardNo() {
+        return bankCardNo;
+    }
+
+    public void setBankCardNo(String bankCardNo) {
+        this.bankCardNo = bankCardNo;
+    }
 
     public StateBean getState() {
         return state;

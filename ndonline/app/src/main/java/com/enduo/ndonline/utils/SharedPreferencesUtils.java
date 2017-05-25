@@ -136,6 +136,9 @@ public class SharedPreferencesUtils {
        	editor.putString("phone", bean.getCellPhone());// 保存手机号
 		editor.putString("name", bean.getUserName());// 用户名字
 		editor.putString("password", password);// 用户名字
+		editor.putString("realname", bean.getRealName());// 实名认证名字
+		editor.putString("bankcardno", bean.getBankCardNo());// 卡号
+		editor.putString("password", password);// 用户名字
 		editor.putString("images", bean.getImages());// head
 	//	editor.putLong("systime", System.currentTimeMillis());// head
 		java.text.NumberFormat nf = java.text.NumberFormat.getInstance();
