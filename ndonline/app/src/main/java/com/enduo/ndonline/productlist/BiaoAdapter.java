@@ -117,11 +117,13 @@ public class BiaoAdapter extends RecyclerView.Adapter<BiaoAdapter.ViewHolder> {
                     Intent intent = new Intent(context,DetailsActivity.class);
                     intent.putExtra("id",b.getId()+"");
                     intent.putExtra("borrowType",b.getBorrowType());
+                    intent.putExtra("borrowStatus",b.getBorrowStatus());
                     context.startActivity(intent);
                 }else {
                     Intent intent = new Intent(context,DetailsActivity.class);
                     intent.putExtra("id",b.getId()+"");
                     intent.putExtra("borrowType",b.getBorrowType());
+                    intent.putExtra("borrowStatus",b.getBorrowStatus());
                     context.startActivity(intent);
                 }
 

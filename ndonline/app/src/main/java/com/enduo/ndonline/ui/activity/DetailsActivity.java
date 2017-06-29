@@ -146,6 +146,7 @@ public class DetailsActivity extends BaseActivity implements ViewPager.OnPageCha
 
 
     String id;
+    int borrowStatus;
     boolean flag;
 
     List<Fragment> fragmentList;
@@ -165,6 +166,7 @@ public class DetailsActivity extends BaseActivity implements ViewPager.OnPageCha
     private void init() {
         Intent intent = getIntent();
         id = intent.getStringExtra("id");
+        borrowStatus = intent.getIntExtra("borrowStatus",-1);
         fragmentList = new ArrayList<>();
 
         viewPagerFramentAdapter = new ViewPagerFramentAdapter(getSupportFragmentManager(), fragmentList);
@@ -175,12 +177,14 @@ public class DetailsActivity extends BaseActivity implements ViewPager.OnPageCha
         Bundle bundle1 = new Bundle();
 //                    bundle1.putSerializable("data", (Serializable) oneBean);
         bundle1.putString("id", id);
+        bundle1.putInt("borrowStatus",borrowStatus);
         fragment_day1.setArguments(bundle1);
         fragmentList.add(fragment_day1);
 
         Fragment_Data fragment_day2 = new Fragment_Data();
         Bundle bundle2 = new Bundle();
         bundle2.putString("id", id);
+        bundle2.putInt("borrowStatus",borrowStatus);
         fragment_day2.setArguments(bundle2);
         fragmentList.add(fragment_day2);
 
@@ -188,6 +192,7 @@ public class DetailsActivity extends BaseActivity implements ViewPager.OnPageCha
         Bundle bundle3 = new Bundle();
         bundle3.putString("id", id);
         fragment_day3.setArguments(bundle3);
+        bundle3.putInt("borrowStatus",borrowStatus);
         fragmentList.add(fragment_day3);
 
         viewPagerFramentAdapter.notifyDataSetChanged();

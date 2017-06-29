@@ -1,8 +1,10 @@
 package com.enduo.ndonline.fragment;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,6 +52,7 @@ public class Fragment_two extends BaseFragment implements ViewPager.OnPageChange
     Banner banner;
     @Bind(R.id.indicator)
     BannerIndicator bannerIndicator;
+    List drawables;
 
     @Override
     public View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -71,6 +74,9 @@ public class Fragment_two extends BaseFragment implements ViewPager.OnPageChange
         params.width=width;
         params.height=width*3/10;
         banner.setLayoutParams(params);
+        drawables = new ArrayList<>();
+        drawables.add(this.getResources().getDrawable(R.mipmap.banner_manage01));
+        drawables.add(this.getResources().getDrawable(R.mipmap.banner_manage02));
 
         banner.setInterval(5000);
         banner.setPageChangeDuration(500);
@@ -82,15 +88,21 @@ public class Fragment_two extends BaseFragment implements ViewPager.OnPageChange
 
             @Override
             public void initImgData(ImageView imageView, Object imgPath) {
-
-                Logger.d("initImgData" + NetService.API_SERVER_Url + ((OneBean.BannersBean) imgPath).getImgPath());
-                Glide.with(Fragment_two.this)
-                        .load(NetService.API_SERVER_Url + ((OneBean.BannersBean) imgPath).getImgPath())
-                        .error(R.mipmap.bg_defult)
-                        .into(imageView);
+                    imageView.setImageDrawable((Drawable) imgPath);
+//                Logger.d("initImgData" + NetService.API_SERVER_Url + ((OneBean.BannersBean) imgPath).getImgPath());
+//                Glide.with(Fragment_two.this)
+//                        .load(NetService.API_SERVER_Url + ((OneBean.BannersBean) imgPath).getImgPath())
+//                        .error(R.mipmap.bg_defult)
+//                        .into(imageView);
             }
         });
-
+        bannerIndicator.setIndicatorSource(
+                ContextCompat.getDrawable(getActivity(), R.drawable.point_selected),//select
+                ContextCompat.getDrawable(getActivity(), R.drawable.point_normal),//unselect
+                Utils.dp2px(getActivity(), 8)//widthAndHeight
+        );
+        banner.attachIndicator(bannerIndicator);
+        banner.setDataSource(drawables);
         List<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(new Fragment_commonly());
         fragmentList.add(new Fragment_new());

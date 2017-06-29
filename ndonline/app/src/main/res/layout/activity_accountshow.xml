@@ -138,13 +138,13 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
                     >
 
                     <LinearLayout
                         android:id="@+id/ll_usableAmount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
                         <View
@@ -206,8 +206,8 @@
 
                     <com.enduo.ndonline.ui.widget.ProgressView
                         android:id="@+id/ProgressView"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
                         android:layout_alignParentRight="true"
                         android:layout_centerInParent="true" />
                 </RelativeLayout>

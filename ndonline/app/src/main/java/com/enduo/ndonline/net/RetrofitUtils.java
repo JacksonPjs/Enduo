@@ -1,5 +1,7 @@
 package com.enduo.ndonline.net;
 
+import com.google.gson.Gson;
+
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.CustomConverterFactory;
@@ -30,11 +32,11 @@ public abstract class RetrofitUtils {
                     //设置服务器路径
                     .baseUrl(NetService.API_SERVER)
                     //增加返回值为String的支持
-                    .addConverterFactory(ScalarsConverterFactory.create())
+//                    .addConverterFactory(ScalarsConverterFactory.create())
                     //添加转化库，默认是Gson
-                    .addConverterFactory(GsonConverterFactory.create())
+                    .addConverterFactory(GsonConverterFactory.create(new Gson()))
                     //添加自定义解析
-                    .addConverterFactory(CustomConverterFactory.create())
+//                    .addConverterFactory(CustomConverterFactory.create())
                     //添加回调库，采用RxJava
                     .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                     .client(OkHttpUtils.getOkHttpClient())

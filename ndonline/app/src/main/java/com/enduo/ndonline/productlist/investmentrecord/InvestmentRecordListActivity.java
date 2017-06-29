@@ -62,62 +62,62 @@ String id ;
      * @param inrefresh 第几次刷新下的加载
      */
     private void net(final int stype, final int inrefresh) {
-        NetWorks.borrowInvestList(id,page + "", pagesize + "", new Subscriber<InvestmentBean>() {
-            @Override
-            public void onCompleted() {
-                publicLv.setRefreshing(false);
-
-                if (stype==0){
-                    publicLv.setRefreshing(false);
-                }else{
-                    publicLv.loadMoreComplete();
-                }
-
-            }
-
-            @Override
-            public void onError(Throwable e) {
-                if (stype==0){
-                    publicLv.setRefreshing(false);
-                }else{
-                    publicLv.loadMoreComplete();
-                }
-                if (page==1){
-                    publicLv.setStatus(LoadingLayout.Error);
-                }else{
-                    publicLv.setTextEnd();
-                }
-
-                Logger.e(e.toString());
-            }
-
-            @Override
-            public void onNext(InvestmentBean biaoBean) {
-
-                if (stype == 0) {
-                    if (biaoBean.getState().getStatus() == 0) {
-                        biaoBeenList.clear();
-                        biaoBeenList.addAll(biaoBean.getData());
-                        publicLv.setStatus(LoadingLayout.Success);
-                    } else {
-                        publicLv.setStatus(LoadingLayout.Empty);
-                    }
-
-                } else if (stype == 1) {
-                    if (publicLv.getRefreshCount() == inrefresh) {
-
-                        if (biaoBean.getState().getStatus() == 0) {
-                            biaoBeenList.addAll(biaoBean.getData());
-                        } else {
-                            publicLv.setTextEnd();
-                        }
-
-                    }
-                }
-                adapter.notifyDataSetChanged();
-            }
-
-        });
+//        NetWorks.borrowInvestList(id,page + "", pagesize + "", new Subscriber<InvestmentBean>() {
+//            @Override
+//            public void onCompleted() {
+//                publicLv.setRefreshing(false);
+//
+//                if (stype==0){
+//                    publicLv.setRefreshing(false);
+//                }else{
+//                    publicLv.loadMoreComplete();
+//                }
+//
+//            }
+//
+//            @Override
+//            public void onError(Throwable e) {
+//                if (stype==0){
+//                    publicLv.setRefreshing(false);
+//                }else{
+//                    publicLv.loadMoreComplete();
+//                }
+//                if (page==1){
+//                    publicLv.setStatus(LoadingLayout.Error);
+//                }else{
+//                    publicLv.setTextEnd();
+//                }
+//
+//                Logger.e(e.toString());
+//            }
+//
+//            @Override
+//            public void onNext(InvestmentBean biaoBean) {
+//
+//                if (stype == 0) {
+//                    if (biaoBean.getState().getStatus() == 0) {
+//                        biaoBeenList.clear();
+//                        biaoBeenList.addAll(biaoBean.getData());
+//                        publicLv.setStatus(LoadingLayout.Success);
+//                    } else {
+//                        publicLv.setStatus(LoadingLayout.Empty);
+//                    }
+//
+//                } else if (stype == 1) {
+//                    if (publicLv.getRefreshCount() == inrefresh) {
+//
+//                        if (biaoBean.getState().getStatus() == 0) {
+//                            biaoBeenList.addAll(biaoBean.getData());
+//                        } else {
+//                            publicLv.setTextEnd();
+//                        }
+//
+//                    }
+//                }
+//                adapter.notifyDataSetChanged();
+//            }
+//
+//        });
 
     }
 

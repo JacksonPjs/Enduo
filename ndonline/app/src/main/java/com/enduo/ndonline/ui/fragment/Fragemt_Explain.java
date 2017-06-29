@@ -35,8 +35,8 @@ public class Fragemt_Explain extends Fragment implements MyScrollView.ScrollList
 
     String id;
 
-    @Bind(R.id.explain)
-    TextView tv_explain;
+//    @Bind(R.id.explain)
+//    TextView tv_explain;
     @Bind(R.id.risk)
     TextView tv_risk;
     @Bind(R.id.layout_contiant)
@@ -69,38 +69,40 @@ public class Fragemt_Explain extends Fragment implements MyScrollView.ScrollList
      * @param inrefresh 第几次刷新下的加载
      */
     private void net(final int stype, final int inrefresh) {
-        NetWorks.queryBorrowIntroduce(id, new Subscriber<IntroduceBean>() {
-            @Override
-            public void onStart() {
-                layoutContiant.setStatus(LoadingLayout.Loading);
-            }
+//        NetWorks.queryBorrowIntroduce(id, new Subscriber<IntroduceBean>() {
+//            @Override
+//            public void onStart() {
+//                layoutContiant.setStatus(LoadingLayout.Loading);
+//            }
+//
+//            @Override
+//            public void onCompleted() {
+//
+//            }
+//
+//            @Override
+//            public void onError(Throwable e) {
+//                layoutContiant.setStatus(LoadingLayout.Error);
+//                Logger.json(e.toString());
+//            }
+//
+//            @Override
+//            public void onNext(IntroduceBean b) {
+//
+//                if (b.getState().getStatus() == 0) {
+//                    layoutContiant.setStatus(LoadingLayout.Success);
+//
+//                    Spanned text = Html.fromHtml(b.getData());
+//                    //  tv.setText(text);
+//                    tv_explain.setText("        " + text);
+//                } else {
+//                    layoutContiant.setStatus(LoadingLayout.Empty);
+//                }
+//
+//            }
+//        });
 
-            @Override
-            public void onCompleted() {
 
-            }
-
-            @Override
-            public void onError(Throwable e) {
-                layoutContiant.setStatus(LoadingLayout.Error);
-                Logger.json(e.toString());
-            }
-
-            @Override
-            public void onNext(IntroduceBean b) {
-
-                if (b.getState().getStatus() == 0) {
-                    layoutContiant.setStatus(LoadingLayout.Success);
-
-                    Spanned text = Html.fromHtml(b.getData());
-                    //  tv.setText(text);
-                    tv_explain.setText("        " + text);
-                } else {
-                    layoutContiant.setStatus(LoadingLayout.Empty);
-                }
-
-            }
-        });
         NetWorks.queryBorrowRisk(id, new Subscriber<IntroduceBean>() {
             @Override
             public void onStart() {

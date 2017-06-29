@@ -17,7 +17,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="10dp"
-            android:text="项目说明"
+            android:text="风控意见"
             android:textColor="@color/colorPrimary" />
 
         <TextView

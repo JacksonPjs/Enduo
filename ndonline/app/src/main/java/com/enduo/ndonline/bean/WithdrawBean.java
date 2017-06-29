@@ -94,6 +94,24 @@ public class WithdrawBean {
         private String bankCardNo;
 
         private String bankName;
+        int id;
+        String bankCode;
+
+        public String getBankCode() {
+            return bankCode;
+        }
+
+        public void setBankCode(String bankCode) {
+            this.bankCode = bankCode;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
 
         public String getBankCardNo() {
             return bankCardNo;

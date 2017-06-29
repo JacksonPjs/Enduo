@@ -153,7 +153,9 @@ public class LoadMoreRecycleView extends RecyclerView {
             mRecyScrollListener.onRecScrollNotTop();
         }
         if (layoutManager.getChildCount() > 0
-                && lastVisibleItemPosition >= layoutManager.getItemCount() - 1&&layoutManager.getItemCount() > layoutManager.getChildCount()&&mLoadingListener!=null) {
+                && lastVisibleItemPosition >= layoutManager.getItemCount() - 1
+                &&layoutManager.getItemCount() >= layoutManager.getChildCount()
+                &&mLoadingListener!=null) {
             mFootView.setVisibility(View.VISIBLE);
 
             if (loadmore){
@@ -165,7 +167,7 @@ public class LoadMoreRecycleView extends RecyclerView {
             }
 
         } else {
-          //  mFootView.setVisibility(View.GONE);
+//            mFootView.setVisibility(View.GONE);
         }
 
 

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\b21696cd0dd53573b4a9c3c446fce5b2deda7970\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_ac65a74fa8b76116e7f2ec4a0dedaf4cc3f5af25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\2d6cad74c357782911f8cac7c40576aa831b48f3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_0b85c2d00145dcd4fb68c07ec338ea8a24a058fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\390ef89807dfeec852b4c204bf371957f5646af4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_5210d39180bbd061a89ef988c73350305ed1b781.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\GitHub\Enduo\ndonline\xlibrary\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3861d34f6171fba941d6edc16902925c6540555f">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_fd770565e62d691c38fef50b6cd77843d038d242.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\05b88f1458475cf87dd71cfd962002d8e4be4cd1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_180fd05d91676f5e5739901fd841e29cb870bd2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\b65b0c4193966e35aa8824e06516e9aae2f62eba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_a20c79e5e9ed4872fd591d9cafd323ce6e476e3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\a2f531f763cb5f7f8d379899e1235a1c52cbdf69\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_c5ec9c77d386dfd9fa694a110c7a3d75548b8617.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\9b7d57c4300396e95641991f6d98826bd8184e98\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_3737a8a9f3c407a1cdfe93db133c0a3329806c9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\6a74b804c389c8a00e59258cb33623aa522a97ed\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fdb2999a05364a8f66f4985624e18e949427d4ee">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_026065fa69b51d23eb0a7c11dbf2ced3dbc7b023.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\018f37c4a496db31d2bea570ddc4e901f61625f5\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_7e15cb1fe06f1fb75c3ee2c6c88fc3d898090cde.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\okhttp-2.5.0_c5a573687790528960a2cdb5042d396490d51899.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\a4eb603bee55281773f564e985b3021520a7a2eb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_ac4f763f4e6ec4214e85580c425932ad04d7243c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\780eabf3f2e717de1b40de22497a02caed37b8ab\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_40dcbea7dd4d8768d79a8d9ee125c6fc23c69276.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\9b7d57c4300396e95641991f6d98826bd8184e98\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_ec47efd2f81057aa86eed52b5612180ed142315f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\018f37c4a496db31d2bea570ddc4e901f61625f5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_07319f621082f767d8b1e84ea9e11ff0b9b3330d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\390ef89807dfeec852b4c204bf371957f5646af4\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_c12a49d786d09bede5eab418304dd8ac3b1c4108.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\70291773d115263e2df575f4032d56f0cc63e024\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_20663f1e01efd5cee40609683aa658ce1e4f3ee9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\GitHub\Enduo\ndonline\app\libs\libammsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="11b09244aedaa51bfd09269637be7c32c60da314">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\libammsdk_819a28a44c7d01ff2bfc6f00e1b6dc065d07d9d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\18d8d1dd3f14ac503613e5cc0168b28b20218d98\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_f32dd3bb2a993d493a23cc50012268ccee7b11a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\GitHub\Enduo\ndonline\app\libs\jpush-android_v3.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8e0e2966df7e5f6062849be632a5c7d62d3a38fa">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\jpush-android_v3.0.1_1cdf32c4ed1c195afd7f12aa4a7bb889bc9828ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\ad21b7c4234cdcb17765c890bf34810e862b4d29\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_6ec19f1c4049101c0ba22d581f43f8201e5fd0b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\GitHub\Enduo\ndonline\app\libs\jcore-android_v1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c49fbb60c08a0d71decd2f092da4677fb7872f04">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\jcore-android_v1.1.0_7ffb3d439c43fd0b4d0e7595630dcf69e42f74fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\ca9ab588cc38af24c75cd33716b9d5c8bb94bd89\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_16f4523f3c32ee634516986346a3a49ebe9a54d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\6bee2f22eeec00dc17b6ea88203d4c5a7b38506e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_15f9b68b7903004e94eca8816747d45dba7b2149.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\a2f531f763cb5f7f8d379899e1235a1c52cbdf69\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_47926d60bc2d7fd5a30a26c09c1d60e85ccd13f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\70291773d115263e2df575f4032d56f0cc63e024\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="D:\GitHub\Enduo\ndonline\app\build\intermediates\pre-dexed\debug\classes_1205e17110777f53a2c076c201427a432e4d8928.jar" />
+    </item>
+
+</items>

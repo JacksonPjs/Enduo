@@ -2,6 +2,7 @@ package com.enduo.ndonline.ui.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -155,7 +156,7 @@ public class Fragment_Mine extends BaseFragment {
                     eyeSet.setImageDrawable(getResources().getDrawable(R.mipmap.icon_eye));
                     toatal.setText((String) SharedPreferencesUtils.getParam(getActivity(), "total1", "0"));
                     eableuse.setText((String) SharedPreferencesUtils.getParam(getActivity(), "usableAmount", "0"));
-                    toatal2.setText((String) SharedPreferencesUtils.getParam(getActivity(), "toatal2", "0"));
+                    toatal2.setText((String) SharedPreferencesUtils.getParam(getActivity(), "total2", "0"));
                     IsGone=false;
                 }
 
@@ -262,7 +263,7 @@ public class Fragment_Mine extends BaseFragment {
                                              name.setText((String) SharedPreferencesUtils.getParam(getActivity(), "name", ""));
                                              toatal.setText((String) SharedPreferencesUtils.getParam(getActivity(), "total1", "0"));
                                              eableuse.setText((String) SharedPreferencesUtils.getParam(getActivity(), "usableAmount", "0"));
-                                             toatal2.setText((String) SharedPreferencesUtils.getParam(getActivity(), "toatal2", "0"));
+                                             toatal2.setText((String) SharedPreferencesUtils.getParam(getActivity(), "total2", "0"));
                                          } else if (loginBean.getState().getStatus() == 99) {
                                              netLogin();
                                          }

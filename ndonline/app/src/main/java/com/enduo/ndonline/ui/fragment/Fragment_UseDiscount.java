@@ -114,6 +114,7 @@ public class Fragment_UseDiscount  extends Fragment implements LoadingLayout.OnR
                         biaoBeenList.clear();
                         biaoBeenList.addAll(biaoBean.getData());
                         publicLv.setStatus(LoadingLayout.Success);
+                        adapter.notifyDataSetChanged();
                     } else {
                         publicLv.setStatus(LoadingLayout.Empty);
                     }
@@ -123,13 +124,14 @@ public class Fragment_UseDiscount  extends Fragment implements LoadingLayout.OnR
 
                         if (biaoBean.getState().getStatus() == 0) {
                             biaoBeenList.addAll(biaoBean.getData());
+                            adapter.notifyDataSetChanged();
                         } else {
                             publicLv.setTextEnd();
                         }
 
                     }
                 }
-                adapter.notifyDataSetChanged();
+
             }
 
         });

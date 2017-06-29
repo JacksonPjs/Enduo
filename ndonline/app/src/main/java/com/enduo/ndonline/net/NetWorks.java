@@ -71,8 +71,8 @@ public class NetWorks extends RetrofitUtils {
      *
      * @param observer
      */
-    public static void tongLianUserWithdraw(String withdrawAmount, String pwd, Subscriber<InfoBean> observer) {
-        setSubscribe(service.tongLianUserWithdraw(withdrawAmount, pwd), observer);
+    public static void tongLianUserWithdraw(String withdrawAmount, String pwd,String bankcode,String cardId,Subscriber<InfoBean> observer) {
+        setSubscribe(service.tongLianUserWithdraw(withdrawAmount, pwd,bankcode,cardId), observer);
     }
 
     /**
@@ -152,8 +152,8 @@ public class NetWorks extends RetrofitUtils {
      *
      * @param observer
      */
-    public static void borrowInvestList(String id, String page, String pagesize, Subscriber<InvestmentBean> observer) {
-        setSubscribe(service.borrowInvestList(id, page, pagesize), observer);
+    public static void borrowInvestList(String id,String result, String page, String pagesize, Subscriber<InvestmentBean> observer) {
+        setSubscribe(service.borrowInvestList(id,result, page, pagesize), observer);
     }
 
     /**

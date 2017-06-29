@@ -4,12 +4,45 @@
     android:layout_height="match_parent"
     android:background="@color/bg_huise"
     android:orientation="vertical">
-    <include layout="@layout/layout_back" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/layout_back"></include>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.pvj.xlibrary.banner.BannerIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    />
+                <com.pvj.xlibrary.banner.Banner
+                    android:id="@+id/main_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@mipmap/banner" />
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     >
+
 
     <LinearLayout
         android:layout_width="match_parent"

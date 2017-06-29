@@ -48,13 +48,14 @@ public class Fragemt_Notes extends Fragment implements LoadingLayout.OnReloadLis
     @Bind(R.id.myscrollview)
     MyScrollView scrollView;
     String id;
+    int borrowStatus;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getArguments();
         id = bundle.getString("id");
-
+        borrowStatus = bundle.getInt("borrowStatus");
     }
 
 
@@ -73,7 +74,7 @@ public class Fragemt_Notes extends Fragment implements LoadingLayout.OnReloadLis
      * @param inrefresh 第几次刷新下的加载
      */
     private void net(final int stype, final int inrefresh) {
-        NetWorks.borrowInvestList(id, page + "", pagesize + "", new Subscriber<InvestmentBean>() {
+        NetWorks.borrowInvestList(id,borrowStatus+"", page + "", pagesize + "", new Subscriber<InvestmentBean>() {
             @Override
             public void onCompleted() {
                 publicLv.setRefreshing(false);

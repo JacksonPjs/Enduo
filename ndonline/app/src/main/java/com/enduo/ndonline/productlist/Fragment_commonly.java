@@ -33,7 +33,8 @@ import static android.R.id.list;
  * Created by Administrator on 2016/12/27.
  */
 
-public class Fragment_commonly extends Fragment implements LoadingLayout.OnReloadListener, LoadMoreRecyclerLoadingLayout.OnRefreshAndLoadMoreListener{
+public class Fragment_commonly extends Fragment implements LoadingLayout.OnReloadListener,
+        LoadMoreRecyclerLoadingLayout.OnRefreshAndLoadMoreListener{
     List<BiaoBean.DataBean> biaoBeenList;
     BiaoAdapter adapter;
 

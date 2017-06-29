@@ -21,24 +21,22 @@
 
         <RelativeLayout
             android:id="@+id/rl_left"
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             android:layout_height="100dp">
         <ImageView
             android:id="@+id/img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/icon_discount_tiyan"
             />
 
             <TextView
                 android:id="@+id/money"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="￥1992"
                 android:layout_marginLeft="10dp"
                 android:layout_centerVertical="true"
                 android:textColor="@color/text_org"
-                android:textSize="@dimen/text_lager_size"
+                android:textSize="@dimen/text_18_size"
                 />
 
 

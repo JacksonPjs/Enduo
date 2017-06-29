@@ -1,9 +1,16 @@
 package com.enduo.ndonline.ui.activity;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.enduo.ndonline.BaseActivity;
@@ -14,6 +21,8 @@ import com.enduo.ndonline.productlist.Fragment_new;
 import com.enduo.ndonline.ui.fragment.Fragment_NoUseDiscount;
 import com.enduo.ndonline.ui.fragment.Fragment_OutOfDateDisount;
 import com.enduo.ndonline.ui.fragment.Fragment_UseDiscount;
+import com.pvj.xlibrary.banner.Banner;
+import com.pvj.xlibrary.banner.BannerIndicator;
 import com.pvj.xlibrary.loadinglayout.Utils;
 
 import java.util.ArrayList;
@@ -40,6 +49,13 @@ public class Activity_discount extends BaseActivity implements ViewPager.OnPageC
     TextView jiluTeam;
     @Bind(R.id.biao_viewpager)
     ViewPager biaoViewpager;
+
+
+    @Bind(R.id.main_banner)
+    Banner banner;
+    @Bind(R.id.indicator)
+    BannerIndicator bannerIndicator;
+    List drawables;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +67,42 @@ public class Activity_discount extends BaseActivity implements ViewPager.OnPageC
     }
 
     private  void init(){
+        WindowManager wm = (WindowManager)getSystemService(Context.WINDOW_SERVICE);
+        int width = wm.getDefaultDisplay().getWidth();
+        int height = wm.getDefaultDisplay().getHeight();
+        ViewGroup.LayoutParams params = banner.getLayoutParams();
+        params.width=width;
+        params.height=width*3/10;
+        banner.setLayoutParams(params);
+        drawables = new ArrayList<>();
+        drawables.add(this.getResources().getDrawable(R.mipmap.banner_discount));
+        banner.setInterval(5000);
+        banner.setPageChangeDuration(500);
+        banner.setBannerDataInit(new Banner.BannerDataInit() {
+            @Override
+            public ImageView initImageView() {
+                return (ImageView) LayoutInflater.from(Activity_discount.this).inflate(R.layout.imageview, null);
+            }
+
+            @Override
+            public void initImgData(ImageView imageView, Object imgPath) {
+                imageView.setImageDrawable((Drawable) imgPath);
+//                Logger.d("initImgData" + NetService.API_SERVER_Url + ((OneBean.BannersBean) imgPath).getImgPath());
+//                Glide.with(Fragment_two.this)
+//                        .load(NetService.API_SERVER_Url + ((OneBean.BannersBean) imgPath).getImgPath())
+//                        .error(R.mipmap.bg_defult)
+//                        .into(imageView);
+            }
+        });
+        bannerIndicator.setIndicatorSource(
+                ContextCompat.getDrawable(Activity_discount.this, R.drawable.point_selected),//select
+                ContextCompat.getDrawable(Activity_discount.this, R.drawable.point_normal),//unselect
+                Utils.dp2px(Activity_discount.this, 8)//widthAndHeight
+        );
+        banner.attachIndicator(bannerIndicator);
+        banner.setDataSource(drawables);
+
+
         List<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(new Fragment_NoUseDiscount());
         fragmentList.add(new Fragment_UseDiscount());

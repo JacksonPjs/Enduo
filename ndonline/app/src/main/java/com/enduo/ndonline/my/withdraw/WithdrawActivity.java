@@ -65,6 +65,7 @@ public class WithdrawActivity extends BaseActivity {
 
     Dialog dialog;
     String UsableAmount;
+    WithdrawBean bean;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +104,7 @@ public class WithdrawActivity extends BaseActivity {
                 if (s.getState().getStatus() == 0) {
 //                    money.setText(s.getData1().getUsableAmount());
                     UsableAmount=s.getData1().getUsableAmount()+"";
+                    bean=s;
                     bankname.setText(s.getData2().getBankName() +"");
                     cardtype.setText(s.getRealName()+"");
                     tMoeny.addTextChangedListener(new EditTextChangeListener());
@@ -271,7 +273,8 @@ public class WithdrawActivity extends BaseActivity {
 
     private void tongLianUserWithdraw() {
 
-        NetWorks.tongLianUserWithdraw(tMoeny.getText().toString(), tShouyi.getText().toString()
+        NetWorks.tongLianUserWithdraw(tMoeny.getText().toString(), tShouyi.getText().toString(),
+                bean.getData2().getBankCode()+"",bean.getData2().getId()+""
                 , new Subscriber<InfoBean>() {
                     @Override
                     public void onStart() {

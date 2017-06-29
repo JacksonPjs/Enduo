@@ -87,7 +87,7 @@
             android:layout_alignParentRight="true"
             android:src="@mipmap/bg01"
             android:focusable="false"
-
+            android:visibility="gone"
             />
         <TextView
             android:id="@+id/cv_countdownView"
@@ -97,6 +97,8 @@
             android:text="@string/app_name"
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
             android:textColor="@color/season"
             />
 

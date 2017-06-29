@@ -38,20 +38,20 @@ import rx.Observable;
  */
 public interface NetService {
     //服务器路径
-    public static final String API_SERVER = "http://172.18.5.252:8080/jp/app/";//测试地址
+//    public static final String API_SERVER = "http://172.18.5.252:8080/jp/app/";//测试地址
 
 
-//    public static final String API_SERVER = "http://www.enduo168.com/app/";  //上线地址
+    public static final String API_SERVER = "http://www.enduo168.com/app/";  //上线地址
     //网址路径
-//    public static final String API_SERVER_Url = "http://192.168.1.196:8080/jp/";
+    public static final String API_SERVER_Url = "http://192.168.1.196:8080/jp/";
 
 
-    public static final String API_SERVER_Url = "http://www.enduo168.com/";
+//    public static final String API_SERVER_Url = "http://www.enduo168.com/";
 
     //主程序地址
-//    public static final String API_SERVER_Main = API_SERVER_Url;
+    public static final String API_SERVER_Main = API_SERVER_Url;
     //测试主程序地址
-    public static final String API_SERVER_Main = "http://172.18.5.252:8080/jp/";
+//    public static final String API_SERVER_Main = "http://172.18.5.252:8080/jp/";
     //图片地址
     // public static final String API_SERVER_Photo = "http://192.168.1.196:8080/";
 
@@ -79,7 +79,8 @@ public interface NetService {
      * @return
      */
     @POST("tongLianUserWithdraw.html")
-    Observable<InfoBean> tongLianUserWithdraw(@Query("withdrawAmount") String withdrawAmount, @Query("pwd") String pwd);
+    Observable<InfoBean> tongLianUserWithdraw(@Query("withdrawAmount") String withdrawAmount,
+                                              @Query("pwd") String pwd,@Query("bankcode") String bankCardNo,@Query("bankCardId") String bankCardId);
 
     @POST("selectBorrowList.html")
     Observable<BiaoBean> selectBorrowList(@Query("curPage") String curPage, @Query("pageSize") String pageSize);
@@ -209,7 +210,7 @@ public interface NetService {
      * 我的投资
      */
     @POST("selectInvestListing.html")
-    Observable<TouziBean> selectInvestListing(@Query("curPage") String curPage, @Query("pageSize") String pageSize);
+    Observable<TouziBean>  selectInvestListing(@Query("curPage") String curPage, @Query("pageSize") String pageSize);
 
     /**
      * 我的消息
@@ -269,7 +270,8 @@ public interface NetService {
      * 产品投资记录
      */
     @POST("borrowInvestList.html")
-    Observable<InvestmentBean> borrowInvestList(@Query("borrowId") String borrowId, @Query("curPage") String curPage, @Query("pageSize") String pageSize);
+    Observable<InvestmentBean> borrowInvestList(@Query("borrowId") String borrowId,@Query("result") String result,
+                                                @Query("curPage") String curPage, @Query("pageSize") String pageSize);
 
 
     /**

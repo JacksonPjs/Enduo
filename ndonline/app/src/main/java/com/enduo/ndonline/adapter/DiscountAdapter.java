@@ -286,7 +286,7 @@ public class DiscountAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                                 mOnItemClickListener.onItemClick(v,null,null);
                             }
                         }else {
-                            //除代金券，加息券,红包
+                            //除代金券，加息券,红包外
                             map.clear();
                             moneymap.clear();
                             notifyDataSetChanged();
@@ -355,6 +355,7 @@ public class DiscountAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                                 int gid=-1;
                                 for (int i=0;i<bean.getUserCouponGz().size();i++){
                                     if (bean.getUserCouponGz().get(i).getInterestQuota()==bean.getUserCouponJx().get(pos).getInterestticket()){
+                                      if (bean.getUserCouponGz().get(i).getPropType()==0)
                                         gid=bean.getUserCouponGz().get(i).getId();
                                     }
                                 }
